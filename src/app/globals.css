@@ -13,19 +13,22 @@
     @apply text-2xl font-extrabold leading-8 text-gray-200;
   }
   h4 {
-    @apply text-xl font-bold text-gray-200;
+    @apply text-xl font-extrabold text-gray-200;
   }
   h5 {
-    @apply text-lg font-bold text-gray-200;
+    @apply text-lg font-extrabold text-gray-200;
   }
   h6 {
-    @apply text-base font-bold  text-orange-600;
+    @apply text-base font-extrabold  text-orange-600;
+  }
+  p {
+    @apply font-light;
   }
   ul {
-    @apply list-disc marker:text-orange-600 pl-8 leading-6;
+    @apply list-disc marker:text-orange-600 pl-8 leading-6 font-light;
   }
   ol {
-    @apply list-decimal  pl-10 leading-6;
+    @apply list-decimal  pl-10 leading-6 font-light;
   }
   blockquote {
     p {

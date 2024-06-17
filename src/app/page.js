@@ -6,7 +6,9 @@ import markdownContext from "@/context/markdownContext";
 import { useState } from "react";
 
 export default function Home() {
-  const [data, setData] = useState("");
+  const [data, setData] = useState(
+    `# Markdown Text Editor\n- write down your content\n- download markdown file`
+  );
   return (
     <markdownContext.Provider value={[data, setData]}>
       <MainLayout>

@@ -6,7 +6,7 @@ import remarkGfm from "remark-gfm";
 function Preview() {
   const [markdown] = useContext(markdownContext);
   return (
-    <div className="p-4 pl-8 flex flex-col gap-6 overflow-y-scroll ">
+    <div className="p-4 pl-8 flex flex-col gap-6 overflow-y-scroll h-full">
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
     </div>
   );
