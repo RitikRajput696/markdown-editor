@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h1 {
+    @apply text-4xl font-bold leading-10 text-gray-200;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  h2 {
+    @apply text-3xl font-extrabold leading-9 text-gray-200;
+  }
+  h3 {
+    @apply text-2xl font-extrabold leading-8 text-gray-200;
+  }
+  h4 {
+    @apply text-xl font-bold text-gray-200;
+  }
+  h5 {
+    @apply text-lg font-bold text-gray-200;
+  }
+  h6 {
+    @apply text-base font-bold  text-orange-600;
+  }
+  ul {
+    @apply list-disc marker:text-orange-600 pl-8 leading-6;
+  }
+  ol {
+    @apply list-decimal  pl-10 leading-6;
+  }
+  blockquote {
+    p {
+      @apply text-gray-100 font-bold bg-gray-700 border-l-4 border-orange-600 rounded-md p-4;
+    }
+  }
+  a {
+    @apply font-bold text-gray-100 underline decoration-dotted;
+  }
+  pre {
+    @apply bg-gray-700 p-4 rounded-md text-gray-200;
   }
 }
