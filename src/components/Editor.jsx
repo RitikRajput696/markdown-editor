@@ -6,7 +6,7 @@ function Editor() {
   const [data, setData] = useContext(markdownContext);
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full overflow-auto">
       <div className="flex items-center content-center h-10 bg-gray-700  text-gray-400 font-normal border-r-2 border-r-gray-400">
         <span className="ml-4"> EDITOR</span>
       </div>
